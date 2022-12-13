@@ -3,7 +3,7 @@ const router = express.Router();
 const tollController = require('../app/api/controllers/tolls');
 
 
-router.get('/', tollController.getAllToll);
-router.get('/searchToll', tollController.searchToll);
+router.get('/all', tollController.getAllToll);
+router.get('/search', tollController.searchToll);
 
 module.exports = router;
